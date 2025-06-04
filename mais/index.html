@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações - Mais Informação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a1128;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #001f54;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00aaff;
+    }
+
+    nav {
+      background-color: #003566;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    .banner {
+      background-image: url('img/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2em;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .produto {
+      background-color: #012a4a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .produto:hover {
+      transform: scale(1.03);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .produto-info {
+      padding: 15px;
+    }
+
+    .produto-info h3 {
+      margin: 0 0 10px;
+      color: #00aaff;
+    }
+
+    .produto-info p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background-color: #001f54;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mais Informações</h1>
+  </header>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="banner">
+    Bem-vindo !
+  </div>
+  <section id="produtos" class="produtos">
+    <div class="produto">
+      
+      
+     
+      <div class="produto-info">
+        <h3>Email</h3>
+        <p>Ryan2910@aluno.pr.senac.br
+            ryu22042008@gmail.com
+        </p>
+      </div>
+    </div>
+    <div class="produto">
+      
+      <div class="produto-info">
+        <h3>Telefone</h3>
+        <p>55 11 998589875
+        <p> 55 44 690982427
+      </div>
+    </div>
+    <div class="produto">
+      <div class="produto-info">
+        <h3>Instagram</h3>
+        <p>@Ryan.liberato43</p>
+      </div>
+    </div>
+  </section>
+  <footer id="contato">
+    <p>Contato: Ryan.2910@aluno.pr.senac.br | 55 11 998589875</p>
+    <p>&copy; 2025 Ryan - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

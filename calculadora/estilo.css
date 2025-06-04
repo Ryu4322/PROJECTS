@@ -1,0 +1,47 @@
+.painel{
+/*borda*/
+border: 1px solid black;
+/*alinha texto no centro*/
+text-align: center;
+/*largura da div*/
+width: 400px;
+/*centralizar toda div*/
+margin: auto;
+/*altura*/
+height: 400px;
+/*arrendondar bordas*/
+border-radius: 20px;
+/*cor do fundo*/
+background-color: rgb(229, 0, 0);
+/*cor da letra*/
+color: black;
+/*tipo de fonte*/
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    /*arredondar*/
+    border-radius: 10px;
+    /*altura*/
+    height: 30px;
+    /*largura*/
+    width: 300px;
+    /*centralizar*/
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.botao{
+    background-color: rgb(253, 255, 252);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 7px;
+}
+.botao.hover{
+    background-color: darkslateblue;
+    transition: 1s;
+}
+#resultado{
+    font-size: 50px;
+    font-weight: bold;
+}

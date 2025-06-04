@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mufat Games - Planos PS4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #fff;
+      background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/15998100-fundo-de-jogo-futurista-verde-escuro-abstrato-com-padrao-de-hexagono-fundo-geometrico-verde-escuro-para-banner-ou-fluxo-offline-modelo-de-plano-de-fundo-de-jogos-vetor.jpg);
+    }
+
+    header {
+      background-color: #091a0b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a, .auth-buttons button {
+      color: #057e0b;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .auth-buttons button {
+      background: #14220a;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .planos-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .plano {
+      background-color: #d9d9d9;
+      color: #1eaf31;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .plano h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .plano p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .plano ul {
+      list-style: none;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+
+    .plano ul li {
+      margin: 0.3rem 0;
+    }
+
+    .plano button {
+      background-color: #333;
+      color: #fff7f7;
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    .plano button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer-logos img {
+      max-height: 40px;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MUFAT GAMES</div>
+    <nav>
+      <a href="#">Produtos</a>
+      <a href="#">Jogos</a>
+      <a href="#">Comunidade</a>
+      <a href="#">Ajuda</a>
+      <a href="#">Contato</a>
+    </nav>
+    <div class="auth-buttons">
+      <button onclick="abrirLogin()">Login</button>
+      <button onclick="abrirRegistro()">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; color:white; font-size: 2rem; margin-top: 2rem;">PLANOS JOGOS/PLUS PS4</h1>
+
+    <div class="planos-container">
+      <div class="plano">
+        <h3>BÁSICO</h3>
+        <p>$30 <span style="font-size: 1rem;">/mensal</span></p>
+        <ul>
+          <li>PES 20</li>
+          <li>FIFA 22</li>
+          <li>EA PLUS</li>
+        </ul>
+        <button onclick="comprar('Básico')">⭐ COMPRAR</button>
+      </div>
+
+      <div class="plano">
+        <h3>AVANÇADO</h3>
+        <p>$60 <span style="font-size: 1rem;">/mensal</span></p>
+        <ul>
+          <li>PES 21</li>
+          <li>FIFA 23</li>
+          <li>GOD OF WAR RAGNAROK</li>
+          <li>GRAN TURISMO 7</li>
+          <li>PS PLUS BASIC</li>
+        </ul>
+        <button onclick="comprar('Avançado')">⭐ COMPRAR</button>
+      </div>
+
+      <div class="plano">
+        <h3>PREMIUM</h3>
+        <p>$420 <span style="font-size: 1rem;">/anual</span></p>
+        <ul>
+          <li>PES 21</li>
+          <li>EA FC 24</li>
+          <li>F1 23</li>
+          <li>NBA 2K24</li>
+          <li>RED DEAD REDEMPTION 2</li>
+          <li>PS PLUS GOLD</li>
+        </ul>
+        <button onclick="comprar('Premium')">⭐ COMPRAR</button>
+      </div>
+
+      <div class="plano">
+        <h3>PRO</h3>
+        <p>$720 <span style="font-size: 1rem;">/anual</span></p>
+        <ul>
+          <li>EA FC 25</li>
+          <li>F1 24</li>
+          <li>GTA 5 RED SHARK</li>
+          <li>UNCHARTED 4</li>
+          <li>GRAN TURISMO 7</li>
+          <li>MARVEL'S SPIDER</li>
+          <li>THE LAST OF US PART II</li>
+        </ul>
+        <button onclick="comprar('Pro')">⭐ COMPRAR</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logos">
+      <p style="color: #fff;">© 2025 Mufat Games - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    function comprar(plano) {
+      alert(`Você escolheu o plano ${plano}! Em breve você será redirecionado para o pagamento.`);
+      // Aqui você pode substituir pela URL real do pagamento
+      window.location.href = `https://pagamento.exemplo.com/${plano.toLowerCase()}`;
+    }
+
+    function abrirLogin() {
+      const usuario = prompt("Digite seu nome de usuário:");
+      const senha = prompt("Digite sua senha:");
+      if (usuario && senha) {
+        alert("Login bem-sucedido! Bem-vindo, " + usuario + "!");
+      } else {
+        alert("Por favor, preencha todos os campos.");
+      }
+    }
+
+    function abrirRegistro() {
+      const nome = prompt("Digite seu nome:");
+      const email = prompt("Digite seu e-mail:");
+      const senha = prompt("Crie uma senha:");
+      if (nome && email && senha) {
+        alert("Registro realizado com sucesso! Seja bem-vindo, " + nome + "!");
+      } else {
+        alert("Todos os campos devem ser preenchidos.");
+      }
+    }
+  </script>
+</body>
+</html>

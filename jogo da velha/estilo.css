@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.quadrado{
+    width: 200px; /*largura*/
+    height: 200px; /*altura*/
+    background-color:rgb(183, 15, 15);
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 120px;
+    color: white;
+}
+
+/*personalizando o div*/
+.painel{
+    background-color: rgba(71, 53, 53, 0); /*cor de fundo*/
+    width: 1000px; /*largura*/
+    height: 800px; /*altura*/
+    margin: auto; /*centralizar*/
+    border: radius 20px;
+    text-align: center
+}
+
+.jogo{
+margin: auto;
+
+
+}
+
+h2{
+    color:rgb(255, 194, 194);
+    text-align: center;
+}
+
+body{
+    background-image: url(mm.png);
+    background-size: cover;
+}
+
+@keyframes jogo {
+    0% { box-shadow: 2px 2px 4px red}
+    25% { box-shadow: 2px 2px 4px rgb(43, 4, 3)}
+    50% { box-shadow: 2px 2px 4px rgb(255, 255, 255)}
+    75% { box-shadow: 2px 2px 4px rgb(175, 26, 6)}
+    100% { box-shadow: 2px 2px 4px rgb(250, 78, 72)}
+}
+
+.botao{
+    background-color: rgb(7, 7, 56);
+    color: aliceblue;
+    border: none;
+    font-size: 30px;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
